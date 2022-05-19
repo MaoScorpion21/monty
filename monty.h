@@ -37,4 +37,8 @@ typedef struct instruction_s
   void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
+void *add_dnodeint(stack_t **head, const int n);
+void *add_dnodeint_end(stack_t **head, const int n);
+void instruccion(int line_num, char *opcion_codigo, stack_t **h);
+
 #endif /*  MONTY_H */

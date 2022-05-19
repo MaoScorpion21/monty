@@ -5,11 +5,11 @@
  * @n: valor of nodo
  * Return: nodo
  */
-dlistint_t *add_dnodeint(dlistint_t **head, const int n)
+void *add_dnodeint(stack_t **head, const int n)
 {
-  dlistint_t *new = NULL;
+  stack_t *new = NULL;
 
-  new = malloc(sizeof(dlistint_t));
+  new = malloc(sizeof(stack_t));
   if (new == NULL)
     return (NULL);
 
@@ -33,11 +33,11 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
  * @n: new value of nodo
  * Return: the address of the new element
  */
-dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
+void *add_dnodeint_end(stack_t **head, const int n)
 {
-	dlistint_t *new = NULL, *aux = *head;
+	stack_t *new = NULL, *aux = *head;
 
-	new = malloc(sizeof(dlistint_t));
+	new = malloc(sizeof(stack_t));
 	if (new == NULL)
 		return (NULL);
 
