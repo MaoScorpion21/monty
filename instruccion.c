@@ -11,7 +11,7 @@ void instruccion(int line_num, char *opc_cod, stack_t **h)
 
 	for (; command[i].opcode; i++)
 	{
-		if (strcmp(command[i].opcode, opcion_codigo) == 0)
+		if (strcmp(command[i].opcode, opc_cod) == 0)
 		{
 			command[i].f(h, line_num);
 			break;

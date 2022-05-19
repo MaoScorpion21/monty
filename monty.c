@@ -21,11 +21,6 @@ int main(int argn, char *argv[])
 		toquenizar(tools.buffer);
 		if (tools.comando != NULL && tools.comando[0] != '$')
 			instruccion(line_num, tools.comando, &head);
-		else
-		{
-			line_num++;
-			continue;
-		}
 		line_num++;
 	}
 	fclose(tools.archivoM);
