@@ -18,9 +18,9 @@
  */
 typedef struct stack_s
 {
-  int n;
-  struct stack_s *prev;
-  struct stack_s *next;
+	int n;
+	struct stack_s *prev;
+	struct stack_s *next;
 } stack_t;
 
 /**
@@ -33,25 +33,25 @@ typedef struct stack_s
  */
 typedef struct instruction_s
 {
-  char *opcode;
-  void (*f)(stack_t **stack, unsigned int line_number);
+	char *opcode;
+	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
 /**
- * struct global - some useful things.
- * @namefile: name of the file to read.
- * @nimbers: numbers to add to the stack.
+ * struct glb - some useful things.
+ * @archivoM: name of the file to read.
+ * @numero: numbers to add to the stack.
  * @buffer: the line read by getline.
- * @com: opcode selected.
+ * @comando: opcode selected.
  * Description: some useful things.
  */
 typedef struct glb
 {
-  FILE *archivoM;
-  char *numero;
-  char *buffer;
-  char *comando;
-}tool;
+	FILE *archivoM;
+	char *numero;
+	char *buffer;
+	char *comando;
+} tool;
 
 void *add_dnodeint(stack_t **head, const int n);
 void *add_dnodeint_end(stack_t **head, const int n);

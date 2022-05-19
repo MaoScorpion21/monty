@@ -6,17 +6,17 @@
  */
 int _isdigit(char *str)
 {
-  int i;
+	int i;
 
-  if (!(str))
-    return (0);
+	if (!(str))
+		return (0);
 
-  i = str[0] == '-' ? 1 : 0;
+	i = str[0] == '-' ? 1 : 0;
 
-  for (; str[i] != '\0'; i++)
-    {
-      if (str[i] < '0' || str[i] > '9')
-	return (0);
-    }
-  return (1);
+	for (; str[i] != '\0'; i++)
+	{
+		if (str[i] < '0' || str[i] > '9')
+			return (0);
+	}
+	return (1);
 }

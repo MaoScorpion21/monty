@@ -7,23 +7,23 @@
  */
 void *add_dnodeint(stack_t **head, const int n)
 {
-  stack_t *new = NULL;
+	stack_t *new = NULL;
 
-  new = malloc(sizeof(stack_t));
-  if (new == NULL)
-    return (NULL);
+	new = malloc(sizeof(stack_t));
+	if (new == NULL)
+		return (NULL);
 
-  new->n = n;
-  new->prev = NULL;
-  new->next = NULL;
+	new->n = n;
+	new->prev = NULL;
+	new->next = NULL;
 
-  if (*head != NULL)
-    {
-      new->next = *head;
-      (*head)->prev = new;
-    }
-  *head = new;
-  return (new);
+	if (*head != NULL)
+	{
+		new->next = *head;
+		(*head)->prev = new;
+	}
+	*head = new;
+	return (new);
 }
 
 #include "monty.h"
