@@ -32,6 +32,6 @@ int main(int argn, char *argv[])
 			instruccion(line_num, tools.comando, &head);
 		line_num++;
 	}
-	fclose(tools.archivoM);
+	_free(head);
 	return (0);
 }

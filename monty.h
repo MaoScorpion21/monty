@@ -60,7 +60,7 @@ void push(stack_t **h, unsigned int line_num);
 int _isdigit(char *str);
 void pall(stack_t **h, unsigned int times __attribute__((unused)));
 void toquenizar(char *buffer);
-
+void _free(stack_t *h);
 
 extern tool tools;
 
