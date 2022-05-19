@@ -18,7 +18,7 @@ int main(int argn, char *argv[])
 		fprintf(stderr, "USAGE: monty file\n");
 		exit(EXIT_FAILURE);
 	}
-	tools.archivoM = fopen(argv[1], "r")
+	tools.archivoM = fopen(argv[1], "r");
 		if (!archivo)
 		{
 			fprintf(stderr, "Error: Can't open file %s\n", archivo);
