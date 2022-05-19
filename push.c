@@ -1,8 +1,8 @@
 #include "monty.h"
 /**
- * _push - function that pushes an element to the stack.
+ * push - function that pushes an element to the stack.
  * @h: pointer to the head of the stack
- * @times: Number of the current line.
+ * @line_num: Number of the current line.
  * Return: Nothing it is a void function.
  */
 void push(stack_t **h, unsigned int line_num)

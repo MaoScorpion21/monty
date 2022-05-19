@@ -1,6 +1,6 @@
 #include "monty.h"
 /**
- * _pall - function that <prints all the values on the stack.
+ * pall - function that prints all the values on the stack.
  * @h: pointer to the head of the stack
  * @times: Number of the current line.
  * Return: Nothing it is a void function.
