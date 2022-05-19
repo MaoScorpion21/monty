@@ -11,11 +11,20 @@ int main(int argn, char *argv[])
 	int line_num = 1;
 	int read = 0;
 	size_t linea = 0;
-	char *archivo = NULL;
 	stack_t *head = NULL;
 
-	archivo = argv[1];
-	abrir_archi(argn, archivo);
+		if (argumentos != 2)
+	{
+		fprintf(stderr, "USAGE: monty file\n");
+		exit(EXIT_FAILURE);
+	}
+	tools.archivoM = fopen(argv[1], "r")
+		if (!archivo)
+	{
+		fprintf(stderr, "Error: Can't open file %s\n", archivo);
+		exit(EXIT_FAILURE);
+	}
+	
 	while ((read = getline(&tools.buffer, &linea, tools.archivoM)) != EOF)
 	{
 		toquenizar(tools.buffer);

@@ -14,12 +14,3 @@ void abrir_archi(int argumentos, char *archivo)
 		exit(EXIT_FAILURE);
 	}
 
-	tools.archivoM = fopen(archivo, "r");
-
-	if (!archivo)
-	{
-		fprintf(stderr, "Error: Can't open file %s\n", archivo);
-		exit(EXIT_FAILURE);
-	}
-
-}
