@@ -13,15 +13,15 @@ int main(int argn, char *argv[])
 	size_t linea = 0;
 	stack_t *head = NULL;
 
-	if (argumentos != 2)
+	if (argn != 2)
 	{
 		fprintf(stderr, "USAGE: monty file\n");
 		exit(EXIT_FAILURE);
 	}
 	tools.archivoM = fopen(argv[1], "r");
-		if (!archivo)
+		if (!tools.archivoM)
 		{
-			fprintf(stderr, "Error: Can't open file %s\n", archivo);
+			fprintf(stderr, "Error: Can't open file %s\n", argv[1]);
 			exit(EXIT_FAILURE);
 		}
 
