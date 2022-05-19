@@ -13,22 +13,9 @@ int main(int argn, char *argv[])
   size_t linea = 0;
   char *archivo = NULL;
   stack_t *head = NULL;
-  
-  if (argn != 2)
-    printf ("USAGE: monty file");
 
   archivo = argv[1];
-  if (access(archivo, R_OK) == EOF)
-    {
-      fprintf(stderr, "Error: Can't open file %s\n",archivo);
-      exit(EXIT_FAILURE);
-    }
-  tools.archivoM = fopen(archivo, "r");
-  if (!tools.archivoM)
-     {
-      fprintf(stderr, "Error: Can't open file %s\n", archivo);
-      exit(EXIT_FAILURE);
-    }
+  abrir_archi(argn, archivo);
   while ((read = getline(&tools.buffer, &linea, tools.archivoM)) != EOF)
     {
       toquenizar(tools.buffer);
