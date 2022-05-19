@@ -3,8 +3,8 @@
 void instruccion(int line_num, char *opcion_codigo, stack_t **h)
 {
   instruction_t command[] = {
-			   { "push", push },
 			   { "pall", pall },
+			   { "push", push },
 			   { NULL, NULL }
   };
   int i = 0;

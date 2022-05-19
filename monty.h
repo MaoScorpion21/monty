@@ -45,13 +45,13 @@ typedef struct instruction_s
  * @com: opcode selected.
  * Description: some useful things.
  */
-typedef struct global
+typedef struct glb
 {
   FILE *archivoM;
   char *numero;
   char *buffer;
   char *comando;
-}tool
+}tool;
 
 void *add_dnodeint(stack_t **head, const int n);
 void *add_dnodeint_end(stack_t **head, const int n);
@@ -59,5 +59,8 @@ void instruccion(int line_num, char *opcion_codigo, stack_t **h);
 void push(stack_t **h, unsigned int line_num);
 int _isdigit(char *str);
 void pall(stack_t **h, unsigned int times __attribute__((unused)));
+void toquenizar(char *buffer);
+
+extern tool tools;
 
 #endif /*  MONTY_H */

@@ -8,12 +8,12 @@
 void push(stack_t **h, unsigned int line_num)
 {
 
-  if (_isdigit(numero) == 1)
+  if (_isdigit(tools.numero) == 0)
     {
       if (*h == NULL || h == NULL)
-	add_dnodeint(h, atoi(numero));
+	add_dnodeint(h, atoi(tools.numero));
       else
-	add_dnodeint_end(h, atoi(numero));
+	add_dnodeint_end(h, atoi(tools.numero));
     }
  else
    {

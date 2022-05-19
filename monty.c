@@ -29,14 +29,13 @@ int main(int argn, char *argv[])
       fprintf(stderr, "Error: Can't open file %s\n", archivo);
       exit(EXIT_FAILURE);
     }
-  while ((read = getline(.tools.buffer, &linea, tools.archivoM)) != EOF)
+  while ((read = getline(&tools.buffer, &linea, tools.archivoM)) != EOF)
     {
-      toquenizar(tool.buffer);
+      toquenizar(tools.buffer);
       if (tools.comando != NULL && tools.comando[0] != '#')
-	instruccion(line_num, tools.comando *head);
-
+	instruccion(line_num, tools.comando, &head);
+      printf("cod = %s num = %d linea = %d\n", tools.comando, atoi(tools.numero), line_num);
       line_num++;
     }
-  free(buffer);
   return (0);
 }
