@@ -11,11 +11,10 @@ int main(int argn, char *argv[])
 	int line_num = 1;
 	int read = 0;
 	size_t linea = 0;
-	char *archivo = NULL;
 	stack_t *head = NULL;
 
-	archivo = argv[1];
-	abrir_archi(argn, archivo);
+	tools.archivoM = fopen(argv[1]);
+	abrir_archi(argn, argv[1]);
 	while ((read = getline(&tools.buffer, &linea, tools.archivoM)) != EOF)
 	{
 		toquenizar(tools.buffer);
@@ -23,6 +22,5 @@ int main(int argn, char *argv[])
 			instruccion(line_num, tools.comando, &head);
 		line_num++;
 	}
-	fclose(tools.archivoM);
 	return (0);
 }
