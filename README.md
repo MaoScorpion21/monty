@@ -22,3 +22,8 @@
 ### Don’t forget to push your header file
 ### All your header files should be include guarded
 ### You are expected to do the tasks in the order shown in the project
+
+# FLOWCHART #
+<img src="https://github.com/Leyneryiret/monty/blob/ed3f5edaf50c23ded1a36906242bb20738a95a8e/flowchrt_1.png" />
+
+<img src="https://github.com/Leyneryiret/monty/blob/ed3f5edaf50c23ded1a36906242bb20738a95a8e/flowchrt_2.png" />
