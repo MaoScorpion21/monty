@@ -14,6 +14,6 @@ void _free(stack_t *h)
 		free(h);
 		h = next;
 	}
-	fclose(tools.namefile);
+	fclose(tools.archivoM);
 	free(tools.buffer);
 }
