@@ -9,12 +9,7 @@ void push(stack_t **h, unsigned int line_num)
 {
 
 	if (_isdigit(tools.numero) == 1)
-	{
-		if (*h == NULL || h == NULL)
-			add_dnodeint(h, atoi(tools.numero));
-		else
-			add_dnodeint_end(h, atoi(tools.numero));
-	}
+		add_dnodeint(h, atoi(tools.numero));
 	else
 	{
 		dprintf(STDERR_FILENO, "L%u: usage: push integer\n", line_num);
