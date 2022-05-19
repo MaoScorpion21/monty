@@ -8,7 +8,7 @@
 int main(int argn, char *argv[])
 {
   FILE *archivoM = NULL;
-  unsigned int line_num = 1;
+  int line_num = 1;
   int read = 0;
   size_t linea = 0;
   char *buffer = NULL, *archivo = NULL, *opcion_codigo = NULL, *numero = NULL;
