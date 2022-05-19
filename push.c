@@ -8,7 +8,7 @@
 void push(stack_t **h, unsigned int line_num)
 {
 
-  if (_isdigit(tools.numero) == 0)
+  if (_isdigit(tools.numero) == 1)
     {
       if (*h == NULL || h == NULL)
 	add_dnodeint(h, atoi(tools.numero));

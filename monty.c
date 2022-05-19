@@ -32,10 +32,15 @@ int main(int argn, char *argv[])
   while ((read = getline(&tools.buffer, &linea, tools.archivoM)) != EOF)
     {
       toquenizar(tools.buffer);
-      if (tools.comando != NULL && tools.comando[0] != '#')
+      if (tools.comando != NULL && tools.comando[0] != '$')
 	instruccion(line_num, tools.comando, &head);
-      printf("cod = %s num = %d linea = %d\n", tools.comando, atoi(tools.numero), line_num);
+      else
+	{
+	  line_num++;
+	  continue;
+	}
       line_num++;
     }
+  fclose(tools.archivoM);
   return (0);
 }
