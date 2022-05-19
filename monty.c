@@ -11,7 +11,7 @@ int main(int argn, char *argv[])
   int line_num = 1;
   int read = 0;
   size_t linea = 0;
-  char *buffer = NULL, *archivo = NULL, *opcion_codigo = NULL, *numero = NULL;
+  char *archivo = NULL;
   stack_t *head = NULL;
   
   if (argn != 2)
@@ -31,12 +31,9 @@ int main(int argn, char *argv[])
     }
   while ((read = getline(.tools.buffer, &linea, tools.archivoM)) != EOF)
     {
-      opcion_codigo = strtok(buffer, "\t\n ");
-      if (tools.com != NULL && tools.com[0] != '#')
-	
-	numero = strtok(NULL, "\t\n ");
-      printf ("cod = %s, parametro %d , linea= %d \n" , opcion_codigo, atoi(numero), line_num);
-
+      toquenizar(tool.buffer);
+      if (tools.comando != NULL && tools.comando[0] != '#')
+	instruccion(line_num, tools.comando *head);
 
       line_num++;
     }
