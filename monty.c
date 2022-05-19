@@ -1,11 +1,11 @@
 #include "monty.h"
 tool tools = {NULL, NULL, NULL, NULL};
 /**
- *  * main - Program that interprets bytecode (.m) and execute opcode
- *   * @argn: number of arguments.
- *    * @argv: Arguments passed to the program.
- *     * Return: 0 on success or exit with code 1.
- *      */
+ * main - Program that interprets bytecode (.m) and execute opcode
+ * @argn: number of arguments.
+ * @argv: Arguments passed to the program.
+ * Return: 0 on success or exit with code 1.
+ **/
 int main(int argn, char *argv[])
 {
 	int line_num = 1;

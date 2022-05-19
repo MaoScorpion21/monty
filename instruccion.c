@@ -1,5 +1,13 @@
 #include "monty.h"
 
+/**
+ * instruccion - function to  the commands
+ * @line_num: number of lines
+ * @opc_cod: command to compare
+ * @h: double pointer to the stack
+ * Return: Nothing
+ **/
+
 void instruccion(int line_num, char *opc_cod, stack_t **h)
 {
 	instruction_t command[] = {
