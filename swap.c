@@ -8,7 +8,7 @@
 void swap(stack_t **h, unsigned int line_num)
 {
 	stack_t *aux = *h;
-	int tmp, tmp2;
+	int tmp = 0;
 
 	if (aux->next == NULL)
 	{
@@ -18,7 +18,6 @@ void swap(stack_t **h, unsigned int line_num)
 	}
 
 	tmp = aux->n;
-	tmp2 = aux->next->n;
-	aux->n = tmp2;
+	aux->n = aux->next->n;
 	aux->next->n = tmp;
 }
