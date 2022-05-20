@@ -63,6 +63,7 @@ void toquenizar(char *buffer);
 void _free(stack_t *h);
 void pint(stack_t **h, unsigned int line_num);
 void pop(stack_t **h, unsigned int line_num);
+void swap(stack_t **h, unsigned int line_num);
 
 extern tool tools;
 
