@@ -21,4 +21,5 @@ void add(stack_t **h, unsigned int line_num)
 	aux->next->n = new;
 	if (aux->next)
 		aux->next->prev = NULL;
+	free(aux);
 }
