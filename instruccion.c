@@ -13,6 +13,7 @@ void instruccion(int line_num, char *opc_cod, stack_t **h)
 	instruction_t command[] = {
 		{ "pall", pall },
 		{ "push", push },
+		{ "pint", pint },
 		{ NULL, NULL }
 	};
 	int i = 0;
