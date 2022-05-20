@@ -8,5 +8,5 @@
 void nop(stack_t **h, unsigned int line_num)
 {
 	(void)h;
-    (void)line_num;
+	(void)line_num;
 }
