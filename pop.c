@@ -15,6 +15,8 @@ void pop(stack_t **h, unsigned int line_num)
 		exit(EXIT_FAILURE);
 	}
     
-    sig->next = (*h);
-    sig->next->prev = NULL;
+    (*h) = sig->next;
+    if (sig->next)
+    	sig->next->prev = NULL;
+ free(sig);
 }
