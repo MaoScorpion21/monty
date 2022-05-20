@@ -16,6 +16,7 @@ void instruccion(int line_num, char *opc_cod, stack_t **h)
 		{ "pint", pint },
 		{ "pop", pop },
 		{ "swap", swap },
+		{ "add", add },
 		{ NULL, NULL }
 	};
 	int i = 0;
