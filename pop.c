@@ -9,14 +9,14 @@ void pop(stack_t **h, unsigned int line_num)
 {
 	stack_t *sig = *h;
 
-    if (h == NULL || *h == NULL)
+	if (h == NULL || *h == NULL)
 	{
 		fprintf(stderr, "L%d: can't pint, stack empty\n", line_num);
 		exit(EXIT_FAILURE);
 	}
-    
-    (*h) = sig->next;
-    if (sig->next)
-    	sig->next->prev = NULL;
- free(sig);
+
+	(*h) = sig->next;
+	if (sig->next)
+		sig->next->prev = NULL;
+	free(sig);
 }
