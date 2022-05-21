@@ -67,7 +67,8 @@ void swap(stack_t **h, unsigned int line_num);
 void add(stack_t **h, unsigned int line_num);
 void nop(stack_t **h, unsigned int line_num);
 void sub(stack_t **h, unsigned int line_num);
-void mul(stack_t **h, unsigned int line_num);
+void _div(stack_t **h, unsigned int line_num);
+void _mul(stack_t **h, unsigned int line_num);
 
 
 extern tool tools;
