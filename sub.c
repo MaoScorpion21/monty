@@ -16,7 +16,7 @@ void sub(stack_t **h, unsigned int line_num)
 		exit(EXIT_FAILURE);
 	}
 
-	new = aux->n - aux->next->n;
+	new = aux->next->n - aux->n;
 	(*h) = aux->next;
 	aux->next->n = new;
 	if (aux->next)
