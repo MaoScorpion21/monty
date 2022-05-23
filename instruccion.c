@@ -21,7 +21,7 @@ void instruccion(int line_num, char *opc_cod, stack_t **h)
 		{ "sub", sub },
 		{ "div", _div },
 		{ "mul", _mul },
-		{ "mod", _mod }
+		{ "mod", _mod },
 		{ NULL, NULL },
 	};
 	int i = 0;
